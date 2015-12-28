@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 11:41:40 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/26 06:33:45 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 10:29:34 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ int			ft_atoi(const char *str)
 		i++;
 	while (str[i])
 	{
-		if (result != (int)result)
-			return (-1);
 		if (str[i] >= '0' && str[i++] <= '9')
 			result = result * 10 + str[i - 1] - '0';
 		else

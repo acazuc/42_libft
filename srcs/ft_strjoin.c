@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:25:40 by acazuc            #+#    #+#             */
-/*   Updated: 2015/12/08 09:28:27 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 10:33:02 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 	size = size + i + 1;
 	result = malloc(sizeof(*result) * size);
+	if (!result)
+		return (result);
 	i = -1;
 	j = -1;
 	while (s1[++i])

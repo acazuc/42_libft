@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 14:25:31 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/24 15:03:02 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 10:31:50 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size = 0;
 	while (s[size])
 		size++;
-	result = malloc(sizeof(*result) * size);
+	result = malloc(sizeof(*result) * (size + 1));
 	if (!result)
 		return (result);
 	i = 0;

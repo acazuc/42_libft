@@ -6,24 +6,23 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:38:01 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/25 15:02:09 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 11:00:46 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 static int	get_size(int n)
 {
 	int		size;
-	int		i;
 
 	size = n < 0 ? 2 : 1;
 	n = n < 0 ? -n : n;
-	i = 1;
-	while (n / i > 0)
+	while (n > 0)
 	{
 		size++;
-		i = i * 10;
+		n /= 10;
 	}
 	return (size);
 }
@@ -37,14 +36,13 @@ char		*ft_itoa(int n)
 	size_t	nb;
 
 	if (n == 0)
-		return ("0");
+		return (ft_strdup("0"));
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (ft_strdup("-2147483648"));
 	nb = n < 0 ? -n : n;
 	size = get_size(n);
 	if (!(result = malloc(sizeof(result) * size)))
 		return (result);
-	result[size - 1] = '\0';
 	if (n < 0)
 		result[0] = '-';
 	j = 1;
@@ -54,5 +52,6 @@ char		*ft_itoa(int n)
 		result[size - i++ - 1] = (nb / j) % 10 + '0';
 		j = j * 10;
 	}
+	result[size - 1] = '\0';
 	return (result);
 }

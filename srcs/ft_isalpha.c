@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 13:03:47 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/26 06:34:55 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 09:37:22 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,5 @@ int	ft_isalpha(int c)
 	unsigned char	ch;
 
 	ch = (unsigned char)c;
-	if (ch == c && ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')))
-		return (1);
-	return (0);
+	return (ch == c && ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')));
 }

@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 13:10:35 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/26 06:35:14 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 09:37:01 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,5 @@ int	ft_isdigit(int c)
 	unsigned char ch;
 
 	ch = (unsigned char)c;
-	if (ch >= '0' && ch <= '9')
-		return (1);
-	return (0);
+	return (c == ch && ch >= '0' && ch <= '9');
 }

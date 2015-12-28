@@ -6,28 +6,12 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:37:42 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/25 10:11:30 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 10:37:28 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-
-static char	*ft_strsub(char const *s, unsigned int start, size_t len)
-{
-	char	*result;
-	size_t	i;
-
-	result = malloc(sizeof(*result) * len);
-	if (!result)
-		return (result);
-	i = 0;
-	while (i < len)
-	{
-		result[i] = s[start + i];
-		i++;
-	}
-	return (result);
-}
+#include "libft.h"
 
 char		*ft_strtrim(char const *s)
 {
@@ -45,6 +29,6 @@ char		*ft_strtrim(char const *s)
 		if (s[i] != ' ' && s[i] != '\t' && s[i] != '\n')
 			end = i + 1;
 	if (end - start == 0 || end < start)
-		return (malloc(sizeof(char)));
+		return (ft_memalloc(1));
 	return (ft_strsub(s, start, end - start));
 }

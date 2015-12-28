@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 13:28:18 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/26 06:35:48 by acazuc           ###   ########.fr       */
+/*   Updated: 2015/12/28 09:36:47 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@ int	ft_isprint(int c)
 	unsigned char ch;
 
 	ch = (unsigned char)c;
-	return (ch == c && ch >= 32 && ch <= 126 ? 1 : 0);
+	return (ch == c && ch >= 32 && ch <= 126);
 }
