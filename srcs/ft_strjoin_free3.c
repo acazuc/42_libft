@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin_free3.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/23 17:29:26 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/03 09:28:01 by acazuc           ###   ########.fr       */
+/*   Created: 2016/01/03 09:19:16 by acazuc            #+#    #+#             */
+/*   Updated: 2016/01/03 09:27:47 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strjoin_free3(char *s1, char *s2)
 {
-	size_t	size;
+	char	*result;
 
-	size = 0;
-	while (s[size])
-	{
-		size++;
-	}
-	return (size);
+	result = ft_strjoin(s1, s2);
+	free(s1);
+	free(s2);
+	return (result);
 }

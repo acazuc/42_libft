@@ -6,14 +6,13 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:05:20 by acazuc            #+#    #+#             */
-/*   Updated: 2015/12/28 11:14:38 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/03 09:29:12 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
-static char	**empty_str()
+static char	**empty_str(void)
 {
 	char	**result;
 

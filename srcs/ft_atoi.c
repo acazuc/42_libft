@@ -6,11 +6,11 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 11:41:40 by acazuc            #+#    #+#             */
-/*   Updated: 2015/12/28 10:29:34 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/03 09:23:25 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int			ft_atoi(const char *str)
 {

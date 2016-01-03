@@ -6,11 +6,11 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 07:47:53 by acazuc            #+#    #+#             */
-/*   Updated: 2015/12/28 09:58:54 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/03 09:28:36 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strncpy(char *dst, const char *src, size_t n)
 {

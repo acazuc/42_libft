@@ -6,11 +6,10 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:38:01 by acazuc            #+#    #+#             */
-/*   Updated: 2015/12/28 11:00:46 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/03 09:24:03 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static int	get_size(int n)

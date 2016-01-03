@@ -6,12 +6,11 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 15:03:24 by acazuc            #+#    #+#             */
-/*   Updated: 2015/11/25 16:05:51 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/03 09:24:18 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

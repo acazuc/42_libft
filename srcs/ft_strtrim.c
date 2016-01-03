@@ -6,11 +6,10 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:37:42 by acazuc            #+#    #+#             */
-/*   Updated: 2015/12/28 10:37:28 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/03 09:29:29 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strtrim(char const *s)
