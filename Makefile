@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2015/12/28 09:32:40 by acazuc           ###   ########.fr        #
+#    Updated: 2016/01/03 09:35:01 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,10 @@ SRCS_NAME = ft_atoi.c \
 			ft_lstdel.c \
 			ft_lstadd.c \
 			ft_lstiter.c \
-			ft_lstmap.c
+			ft_lstmap.c \
+			ft_strjoin_free1.c \
+			ft_strjoin_free2.c \
+			ft_strjoin_free3.c
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
