@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:22:22 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/03 09:29:46 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/05 15:37:03 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 void	ft_putstr(char const *s)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(1, s + i, 1);
-		i++;
-	}
+	ft_putstr_fd(s, 1);
 }

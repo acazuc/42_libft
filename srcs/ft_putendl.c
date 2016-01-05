@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:25:30 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/03 09:25:48 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/05 15:36:45 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 
 void	ft_putendl(char const *s)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(1, s + i, 1);
-		i++;
-	}
-	write(1, "\n", 1);
+	ft_putstr(s);
+	ft_putchar('\n');
 }
