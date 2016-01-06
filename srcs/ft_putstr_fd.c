@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:22:22 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/05 15:36:02 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/06 08:49:27 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	if (!s)
+		write(fd, "(null)", 6);
+	else
+		write(fd, s, ft_strlen(s));
 }
