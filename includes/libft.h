@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/03 09:32:56 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/08 07:57:22 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,5 +117,6 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char				*ft_strjoin_free1(char *s1, char *s2);
 char				*ft_strjoin_free2(char *s1, char *s2);
 char				*ft_strjoin_free3(char *s1, char *s2);
+double				ft_atod(const char *str);
 
 #endif
