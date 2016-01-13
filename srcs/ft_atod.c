@@ -6,7 +6,7 @@
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/08 07:45:30 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/08 08:01:38 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/08 14:18:48 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ static double	get_floating_value(char *str)
 
 	value = 0;
 	i = 0;
-	while (str[i] && ((str[i] >= 0 && str[i] < 33) || str[i] == 127))
-		i++;
 	divisor = 10;
 	while (str[i])
 	{
