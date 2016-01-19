@@ -6,13 +6,15 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/01/08 07:57:57 by acazuc           ###   ########.fr        #
+#    Updated: 2016/01/19 09:00:55 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-FLAGS = -Wall -Wextra -Werror
+CC = gcc
+
+CFLAGS = -Wall -Wextra -Werror -Ofast
 
 INCLUDES_PATH = includes/
 
@@ -98,7 +100,7 @@ $(NAME): $(OBJS)
 
 $(OBJS_PATH)%.o: $(SRCS_PATH)%.c
 	@echo " - Compiling $<"
-	@gcc $(FLAGS) -o $@ -c $< -I$(INCLUDES_PATH)
+	@$(CC) $(CFLAGS) -o $@ -c $< -I$(INCLUDES_PATH)
 
 .PHONY: clean fclean re
 
