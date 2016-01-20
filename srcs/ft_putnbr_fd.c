@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:30:10 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/05 15:37:37 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/20 16:15:33 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,14 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	c;
-
 	if (n == -2147483648)
 	{
-		write(fd, "-2147483648", 11);
+		ft_putstr_fd("-2147483648", fd);
 		return ;
 	}
 	if (n < 0)
 	{
-		write(fd, "-", 1);
+		ft_putchar_fd('-', fd);
 		n = -n;
 	}
 	if (n > 9)
@@ -32,8 +30,5 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 	else
-	{
-		c = '0' + n;
-		write(fd, &c, 1);
-	}
+		ft_putchar_fd('0' + n, fd);
 }
