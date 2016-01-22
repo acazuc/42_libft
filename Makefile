@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/01/19 09:00:55 by acazuc           ###   ########.fr        #
+#    Updated: 2016/01/22 07:57:21 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,8 @@ SRCS_NAME = ft_atoi.c \
 			ft_strjoin_free1.c \
 			ft_strjoin_free2.c \
 			ft_strjoin_free3.c \
-			ft_atod.c
+			ft_atod.c \
+			ft_strcount.c
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
@@ -91,7 +92,7 @@ OBJS_NAME = $(SRCS_NAME:.c=.o)
 
 OBJS = $(addprefix $(OBJS_PATH), $(OBJS_NAME))
 
-all: $(NAME)
+all: odir $(NAME)
 
 $(NAME): $(OBJS)
 	@echo " - Making $(NAME)"
@@ -102,7 +103,8 @@ $(OBJS_PATH)%.o: $(SRCS_PATH)%.c
 	@echo " - Compiling $<"
 	@$(CC) $(CFLAGS) -o $@ -c $< -I$(INCLUDES_PATH)
 
-.PHONY: clean fclean re
+odir:
+	@mkdir -p $(OBJS_PATH)
 
 clean:
 	@echo " - Cleaning objs"
@@ -113,3 +115,5 @@ fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: clean fclean re odir
