@@ -6,7 +6,7 @@
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/08 07:45:30 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/08 14:18:48 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/01/30 15:03:20 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,5 @@ double			ft_atod(const char *str)
 	free(integer_part);
 	floating_value = get_floating_value(((char *)str) + end + 1);
 	return (integer_value +
-			(integer_value < 0 ? -floating_value : floating_value));
+			(str[0] == '-' ? -floating_value : floating_value));
 }
