@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/20 18:33:58 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/01 14:11:47 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,5 +119,6 @@ char				*ft_strjoin_free2(char *s1, char *s2);
 char				*ft_strjoin_free3(char *s1, char *s2);
 double				ft_atod(const char *str);
 int					ft_strcount(char *str, char c);
+int					ft_isstrdigit(char *str);
 
 #endif
