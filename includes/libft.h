@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/05 11:37:29 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/05 15:58:09 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,5 +124,11 @@ char				*ft_ltoa(long long int n);
 char				*ft_ultoa(unsigned long long int n);
 char				*ft_ltoa_base(long long int n, char *base);
 char				*ft_ultoa_base(unsigned long long int n, char *base);
+void				ft_putwchar(wchar_t c);
+void				ft_putwchar_fd(wchar_t c, int fd);
+void				ft_putwstr(wchar_t const *s);
+void				ft_putwstr_fd(wchar_t const *s, int fd);
+size_t				ft_wstrlen(wchar_t const *s);
+wchar_t				*ft_wstrsub(wchar_t const *s, unsigned int start, size_t len);
 
 #endif
