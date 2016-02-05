@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_ultoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/24 16:38:01 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/05 09:37:56 by acazuc           ###   ########.fr       */
+/*   Created: 2016/02/05 09:43:48 by acazuc            #+#    #+#             */
+/*   Updated: 2016/02/05 09:49:42 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	get_size(int n)
+static size_t	get_size(unsigned long long int n)
 {
 	size_t	size;
 
-	size = n < 0 ? 2 : 1;
-	n = n < 0 ? -n : n;
+	size = 1;
 	while (n > 0)
 	{
 		size++;
@@ -26,7 +25,7 @@ static size_t	get_size(int n)
 	return (size);
 }
 
-char			*ft_itoa(int n)
+char			*ft_ultoa(unsigned long long int n)
 {
 	char	*result;
 	size_t	size;
@@ -36,14 +35,10 @@ char			*ft_itoa(int n)
 
 	if (n == 0)
 		return (ft_strdup("0"));
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	nb = n < 0 ? -n : n;
+	nb = n;
 	size = get_size(n);
 	if (!(result = malloc(sizeof(result) * size)))
 		return (result);
-	if (n < 0)
-		result[0] = '-';
 	j = 1;
 	i = 1;
 	while (nb / j > 0)
