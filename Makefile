@@ -6,13 +6,13 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/02/05 11:31:59 by acazuc           ###   ########.fr        #
+#    Updated: 2016/02/05 15:58:21 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+CC = clang-3.5
 
 CFLAGS = -Wall -Wextra -Werror -Ofast
 
@@ -88,6 +88,12 @@ SRCS_NAME = ft_atoi.c \
 			ft_ultoa.c \
 			ft_ltoa_base.c \
 			ft_ultoa_base.c \
+			ft_putwchar.c \
+			ft_putwchar_fd.c \
+			ft_putwstr.c \
+			ft_putwstr_fd.c \
+			ft_wstrlen.c \
+			ft_wstrsub.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
