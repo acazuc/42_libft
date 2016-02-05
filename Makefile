@@ -6,13 +6,13 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/02/05 15:58:21 by acazuc           ###   ########.fr        #
+#    Updated: 2016/02/05 17:19:30 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = clang-3.5
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -Ofast
 

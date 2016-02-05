@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:25:30 by acazuc            #+#    #+#             */
-/*   Updated: 2016/01/20 16:13:29 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/05 17:57:27 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', 2);
+	ft_putchar_fd('\n', fd);
 }
