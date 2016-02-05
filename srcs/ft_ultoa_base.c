@@ -6,7 +6,7 @@
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/05 11:20:57 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/05 11:35:04 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/05 11:40:33 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char			*ft_ultoa_base(unsigned long long int n, char *base)
 	while (nb / j > 0)
 	{
 		result[size - i++ - 1] = base[(nb / j) % ft_strlen(base)];
-		j = j * 10;
+		j = j * ft_strlen(base);
 	}
 	result[size - 1] = '\0';
 	return (result);
