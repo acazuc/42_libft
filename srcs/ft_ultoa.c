@@ -6,7 +6,7 @@
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/05 09:43:48 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/05 09:49:42 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/05 11:36:31 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	get_size(unsigned long long int n)
 {
-	size_t	size;
+	size_t					size;
 
 	size = 1;
 	while (n > 0)
@@ -27,11 +27,11 @@ static size_t	get_size(unsigned long long int n)
 
 char			*ft_ultoa(unsigned long long int n)
 {
-	char	*result;
-	size_t	size;
-	size_t	j;
-	size_t	i;
-	size_t	nb;
+	char					*result;
+	size_t					size;
+	unsigned long long int	j;
+	unsigned long long int	i;
+	unsigned long long int	nb;
 
 	if (n == 0)
 		return (ft_strdup("0"));

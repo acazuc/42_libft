@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/05 11:23:56 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/05 11:32:19 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,5 +123,6 @@ int					ft_strisdigit(char *str);
 char				*ft_ltoa(long long int n);
 char				*ft_ultoa(unsigned long long int n);
 char				*ft_ltoa_base(long long int n, char *base);
+char				*ft_ltoa_vbase(unsigned long long int n, char *base);
 
 #endif

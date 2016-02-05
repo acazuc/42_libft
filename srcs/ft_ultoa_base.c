@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultoa.c                                         :+:      :+:    :+:   */
+/*   ft_ultoa_base.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/05 09:43:48 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/05 11:35:42 by acazuc           ###   ########.fr       */
+/*   Created: 2016/02/05 11:20:57 by acazuc            #+#    #+#             */
+/*   Updated: 2016/02/05 11:35:04 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	get_size(long long int n)
+static size_t	get_size(unsigned long long int n, char *base)
 {
 	size_t					size;
 
-	size = n < 0 ? 2 : 1;
-	n = n < 0 ? -n : n;
+	size = 1;
 	while (n > 0)
 	{
 		size++;
-		n /= 10;
+		n /= ft_strlen(base);
 	}
 	return (size);
 }
 
-char			*ft_ltoa(long long int n)
+char			*ft_ultoa_base(unsigned long long int n, char *base)
 {
 	char					*result;
 	size_t					size;
@@ -34,19 +33,19 @@ char			*ft_ltoa(long long int n)
 	unsigned long long int	i;
 	unsigned long long int	nb;
 
+	if (!base || ft_strlen(base) < 2)
+		return (NULL);
 	if (n == 0)
 		return (ft_strdup("0"));
-	nb = n < 0 ? -n : n;
-	size = get_size(n);
+	nb = n;
+	size = get_size(n, base);
 	if (!(result = malloc(sizeof(result) * size)))
 		return (result);
-	if (n < 0)
-		result[0] = '-';
 	j = 1;
 	i = 1;
 	while (nb / j > 0)
 	{
-		result[size - i++ - 1] = (nb / j) % 10 + '0';
+		result[size - i++ - 1] = base[(nb / j) % ft_strlen(base)];
 		j = j * 10;
 	}
 	result[size - 1] = '\0';
