@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/02/05 17:19:30 by acazuc           ###   ########.fr        #
+#    Updated: 2016/02/10 17:27:43 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,6 +94,7 @@ SRCS_NAME = ft_atoi.c \
 			ft_putwstr_fd.c \
 			ft_wstrlen.c \
 			ft_wstrsub.c \
+			ft_atol.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
