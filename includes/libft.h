@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/10 17:28:46 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/13 15:19:00 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,8 @@ void				ft_putwchar_fd(wchar_t c, int fd);
 void				ft_putwstr(wchar_t const *s);
 void				ft_putwstr_fd(wchar_t const *s, int fd);
 size_t				ft_wstrlen(wchar_t const *s);
-wchar_t				*ft_wstrsub(wchar_t const *s, unsigned int start, size_t len);
+wchar_t				*ft_wstrsub(wchar_t const *s, unsigned int start
+		, size_t len);
 long				ft_atol(char const *str);
 
 #endif
