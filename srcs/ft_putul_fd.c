@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:30:10 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/22 10:30:15 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/22 10:35:04 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	ft_putul_fd(size_t n, int fd)
 		ft_putul_fd(n % 10, fd);
 	}
 	else
-		ft_putul_fd('0' + n, fd);
+		ft_putchar_fd('0' + n, fd);
 }
