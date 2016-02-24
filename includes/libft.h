@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/02/24 13:52:56 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/02/24 15:55:42 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,6 @@ long				ft_atol(char const *str);
 void				ft_putul(size_t nbr);
 void				ft_putul_fd(size_t nbr, int fd);
 char				*ft_strsub_free(char const *s, unsigned int st, size_t l);
+char				*ft_strtrim_free(char const *s);
 
 #endif
