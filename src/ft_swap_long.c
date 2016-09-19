@@ -6,13 +6,13 @@
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 14:02:28 by acazuc            #+#    #+#             */
-/*   Updated: 2016/09/19 14:07:36 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/09/19 14:19:46 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	ft_swap_long(long l)
+long long	ft_swap_long(long long l)
 {
 	return (((l >> 56) & 0xff) | ((l >> 40) & 0xff00) | ((l >> 24) & 0xff0000)
 			| ((l >> 8) & 0xff000000) | ((l & 0xff000000) << 8)

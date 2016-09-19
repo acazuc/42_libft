@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/05/16 11:28:45 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/09/19 14:17:51 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,5 +107,8 @@ void				ft_putul_fd(size_t nbr, int fd);
 char				*ft_strsub_free(char const *s, unsigned int st, size_t l);
 char				*ft_strtrim_free(char const *s);
 void				ft_exit(char *message, int exit_status);
+short				ft_swap_short(short s);
+int					ft_swap_int(int i);
+long long			ft_swap_long(long long l);
 
 #endif
