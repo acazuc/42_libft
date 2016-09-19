@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/05/16 11:28:25 by acazuc           ###   ########.fr        #
+#    Updated: 2016/09/19 13:57:01 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,11 @@ NAME = libft.a
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror -Ofast
+CFLAGS = -Wall -Wextra -Werror -Ofast -g
 
-INCLUDES_PATH = includes/
+INCLUDES_PATH = include/
 
-SRCS_PATH = srcs/
+SRCS_PATH = src/
 
 SRCS_NAME = ft_atoi.c \
 			ft_bzero.c \
@@ -100,10 +100,13 @@ SRCS_NAME = ft_atoi.c \
 			ft_strsub_free.c \
 			ft_strtrim_free.c \
 			ft_exit.c \
+			ft_swap_short.c \
+			ft_swap_int.c \
+			ft_swap_long.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
-OBJS_PATH = objs/
+OBJS_PATH = obj/
 
 OBJS_NAME = $(SRCS_NAME:.c=.o)
 
