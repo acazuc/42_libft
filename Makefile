@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/09/19 13:57:01 by acazuc           ###   ########.fr        #
+#    Updated: 2016/09/19 14:25:09 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -103,6 +103,9 @@ SRCS_NAME = ft_atoi.c \
 			ft_swap_short.c \
 			ft_swap_int.c \
 			ft_swap_long.c \
+			ft_swap_ushort.c \
+			ft_swap_uint.c \
+			ft_swap_ulong.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
