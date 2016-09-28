@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/09/19 14:25:56 by acazuc           ###   ########.fr       */
+/*   Updated: 2016/09/28 17:20:17 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <math.h>
 
 typedef struct		s_list
 {
@@ -50,6 +51,7 @@ int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+int					ft_isspace(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
@@ -113,5 +115,7 @@ long long			ft_swap_long(long long l);
 unsigned short		ft_swap_ushort(unsigned short s);
 unsigned int		ft_swap_uint(unsigned int i);
 unsigned long long	ft_swap_ulong(unsigned long long l);
+double				ft_todegrees(double radians);
+double				ft_toradians(double degrees);
 
 #endif

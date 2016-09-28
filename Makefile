@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/09/19 14:25:09 by acazuc           ###   ########.fr        #
+#    Updated: 2016/09/28 17:19:45 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRCS_NAME = ft_atoi.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
+			ft_isspace.c \
 			ft_itoa.c \
 			ft_memalloc.c \
 			ft_memccpy.c \
@@ -106,6 +107,8 @@ SRCS_NAME = ft_atoi.c \
 			ft_swap_ushort.c \
 			ft_swap_uint.c \
 			ft_swap_ulong.c \
+			ft_todegrees.c \
+			ft_toradians.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
