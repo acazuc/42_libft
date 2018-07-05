@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2016/09/28 17:20:17 by acazuc           ###   ########.fr       */
+/*   Updated: 2018/06/26 22:51:08 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
 # include <math.h>
 
 typedef struct		s_list
@@ -117,5 +118,7 @@ unsigned int		ft_swap_uint(unsigned int i);
 unsigned long long	ft_swap_ulong(unsigned long long l);
 double				ft_todegrees(double radians);
 double				ft_toradians(double degrees);
+double				ft_abs(double v);
+void				ft_memxor(void *dst, void *v1, void *v2, size_t len);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2016/09/28 17:19:45 by acazuc           ###   ########.fr        #
+#    Updated: 2018/06/26 22:46:24 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,13 @@ NAME = libft.a
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror -Ofast -g
+AR = gcc-ar
 
-INCLUDES_PATH = include/
+RANLIB = gcc-ranlib
+
+CFLAGS = -Wall -Wextra -Werror -Ofast -g -mtune=native -flto=8
+
+INCLUDES = -I include
 
 SRCS_PATH = src/
 
@@ -109,6 +113,8 @@ SRCS_NAME = ft_atoi.c \
 			ft_swap_ulong.c \
 			ft_todegrees.c \
 			ft_toradians.c \
+			ft_abs.c \
+			ft_memxor.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
@@ -122,12 +128,12 @@ all: odir $(NAME)
 
 $(NAME): $(OBJS)
 	@echo " - Making $(NAME)"
-	@ar -rc $(NAME) $(OBJS)
-	@ranlib $(NAME)
+	@$(AR) -rc $(NAME) $(OBJS)
+	@$(RANLIB) $(NAME)
 
 $(OBJS_PATH)%.o: $(SRCS_PATH)%.c
 	@echo " - Compiling $<"
-	@$(CC) $(CFLAGS) -o $@ -c $< -I$(INCLUDES_PATH)
+	@$(CC) $(CFLAGS) -fPIC -o $@ -c $< $(INCLUDES)
 
 odir:
 	@mkdir -p $(OBJS_PATH)

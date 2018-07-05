@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap_uint.c                                     :+:      :+:    :+:   */
+/*   ft_memxor.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acazuc <acazuc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/19 14:00:54 by acazuc            #+#    #+#             */
-/*   Updated: 2018/06/23 22:04:46 by acazuc           ###   ########.fr       */
+/*   Created: 2018/06/26 22:45:37 by acazuc            #+#    #+#             */
+/*   Updated: 2018/06/27 15:01:44 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_swap_uint(unsigned int i)
+void	ft_memxor(void *dst, void *v1, void *v2, size_t len)
 {
-	return (((i >> 24) & 0xff) | ((i >> 8) & 0xff00) | ((i & 0xff00) << 8)
-			| ((i & 0xff) << 24));
+	size_t	i;
+
+	i = 0;
+	while (i < len)
+	{
+		((uint8_t*)dst)[i] = ((uint8_t*)v1)[i] ^ ((uint8_t*)v2)[i];
+		++i;
+	}
 }
