@@ -6,7 +6,7 @@
 /*   By: acazuc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:40:16 by acazuc            #+#    #+#             */
-/*   Updated: 2018/06/26 22:51:08 by acazuc           ###   ########.fr       */
+/*   Updated: 2018/08/08 20:15:23 by acazuc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,5 +120,6 @@ double				ft_todegrees(double radians);
 double				ft_toradians(double degrees);
 double				ft_abs(double v);
 void				ft_memxor(void *dst, void *v1, void *v2, size_t len);
+int				ft_strisnum(char *s);
 
 #endif
