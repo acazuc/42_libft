@@ -6,7 +6,7 @@
 #    By: acazuc <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/25 06:50:12 by acazuc            #+#    #+#              #
-#    Updated: 2018/08/08 20:21:18 by acazuc           ###   ########.fr        #
+#    Updated: 2018/08/12 17:47:02 by acazuc           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ AR = gcc-ar
 
 RANLIB = gcc-ranlib
 
-CFLAGS = -Wall -Wextra -Werror -Ofast -g -mtune=native -flto=8
+CFLAGS = -Wall -Wextra -Werror -Ofast -g -march=native -flto=8
 
 INCLUDES = -I include
 
@@ -115,6 +115,8 @@ SRCS_NAME = ft_atoi.c \
 			ft_toradians.c \
 			ft_abs.c \
 			ft_memxor.c \
+			ft_memor.c \
+			ft_memand.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 
